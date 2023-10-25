@@ -1,0 +1,15 @@
+.header{
+ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.headerbody{
+    background-color: yellowgreen;
+    text-align: center;
+    width: 80%;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}

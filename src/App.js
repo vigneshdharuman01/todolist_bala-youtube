@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
+import Content from './Components/Content/Content';
+import Footer from './Components/Footer/Footer';
+import Header from './Components/Header/Header';
 
 function App() {
+  
+    const [items,setItems]=useState([
+    {
+      id:1,
+      checked:true,
+      work:"morning running at 6am"
+    },
+    {
+      id:2,
+      checked:false,
+      work:"workout in gym"
+    },
+    {
+      id:3,
+      checked:false,
+      work:"learn sql"
+    }
+  ]); 
+  const [searchitems,setSearchitems]=useState("clear..")
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Header/>
+    <Content items={items} setItems={setItems} searchitems={searchitems} setSearchitems={setSearchitems}/>
+    <Footer/>
     </div>
   );
 }

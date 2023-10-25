@@ -1,0 +1,13 @@
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footercontent{
+    width: 80%;
+    background-color: yellowgreen;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid black;
+    margin-top: 20px;
+}

@@ -1,0 +1,78 @@
+.showlist{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   margin-bottom: 20px;
+}
+
+.showlist .box{
+    width:40%;
+    text-align: center;
+    background:rgb(138, 164, 102);
+    padding: 10px;
+    border-radius: 0px 0px 30px 0px;
+}
+
+.showlist .box ul{
+   /* background-color: aqua; */
+   padding: 20px;
+}
+
+.showlist .box ul li{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+    padding: 5px;
+    background-color: aliceblue;
+}
+
+.showlist .box ul li:nth-child(2){
+    background-color: wheat;
+}
+
+.showlist .box ul li input{
+    width: 20px;
+}
+
+.showlist .box ul li p{
+    background-color: rgb(139, 247, 247);
+    width: 300px;
+    font-family:monospace;
+    /* width: fit-content; */
+    padding: 0 20px;
+    border-radius: 20px;
+  
+}
+
+.showlist .box ul li .button{
+    background:transparent;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    color: red;
+    
+    /* padding-top: 3px; */
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .showlist .box{
+        width:60%;
+    }
+    .showlist .box ul li{
+       
+        background-color:transparent;
+    }
+    
+    .showlist .box ul li:nth-child(2){
+        background-color:transparent;
+    }
+    .showlist .box ul li p{
+        background-color:transparent;
+        /* margin: 0 0px; */
+    }
+    .showlist .box ul li .button{
+        font-size: 50px;
+    }
+
+}
